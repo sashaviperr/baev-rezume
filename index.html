@@ -1,0 +1,303 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Резюме - Александр Баев</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background:#edf2f7;
+    color:#333;
+}
+
+.container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.header{
+    background:linear-gradient(135deg,#1f3a5f,#325a8c);
+    color:white;
+    border-radius:20px;
+    padding:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.header-text h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.header-text h3{
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.contacts p{
+    margin:8px 0;
+}
+
+.photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+.main{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    color:#1f3a5f;
+    margin-bottom:15px;
+    border-bottom:2px solid #e6e6e6;
+    padding-bottom:10px;
+}
+
+.salary{
+    font-size:30px;
+    font-weight:bold;
+    color:#1f3a5f;
+}
+
+.skill{
+    display:inline-block;
+    background:#dce8f8;
+    color:#1f3a5f;
+    padding:8px 14px;
+    border-radius:8px;
+    margin:5px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.timeline{
+    border-left:4px solid #1f3a5f;
+    padding-left:20px;
+}
+
+.job{
+    margin-bottom:30px;
+}
+
+.job h3{
+    color:#1f3a5f;
+    margin-bottom:5px;
+}
+
+.job ul{
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.job li{
+    margin-bottom:6px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.about{
+    line-height:1.7;
+}
+
+@media(max-width:900px){
+
+    .header{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .main{
+        grid-template-columns:1fr;
+    }
+
+    .header-text h1{
+        font-size:30px;
+    }
+
+    .photo{
+        width:150px;
+        height:150px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="header-text">
+            <h1>Баев Александр Павлович</h1>
+
+            <h3>Специалист по тестированию программного обеспечения (QA)</h3>
+
+            <div class="contacts">
+                <p>г. Вологда</p>
+                <p>возраст: 18 лет</p>
+                <p>email: baevsuper@2007.com</p>
+                <p>номер тел.: +7 921 828 3398</p>
+            </div>
+        </div>
+
+        <img src="a48292a1-7c35-4e05-bb51-976df52a8606.jpg" alt="Фото" class="photo">
+
+    </div>
+
+    <div class="main">
+
+        <div>
+
+            <div class="card">
+                <h2>Желаемая должность</h2>
+                <p>QA Engineer / Стажёр-тестировщик</p>
+                <br>
+                <div class="salary">от 40 000 ₽</div>
+            </div>
+
+            <div class="card">
+                <h2>Навыки</h2>
+
+                <span class="skill">Ручное тестирование</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Python</span>
+                <span class="skill">Postman</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">Тест-кейсы</span>
+                <span class="skill">Чек-листы</span>
+                <span class="skill">Тест-дизайн</span>
+                <span class="skill">UI/UX</span>
+                <span class="skill">API-тестирование</span>
+                <span class="skill">Работа с БД</span>
+                <span class="skill">Поиск багов</span>
+            </div>
+
+            <div class="card">
+                <h2>Личные качества</h2>
+
+                <ul>
+                    <li>Ответственность</li>
+                    <li>Коммуникабельность</li>
+                    <li>Внимательность к деталям</li>
+                    <li>Быстрая обучаемость</li>
+                    <li>Стрессоустойчивость</li>
+                    <li>Работа в команде</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="card">
+                <h2>Опыт работы</h2>
+
+                <div class="timeline">
+
+                    <div class="job">
+                        <h3>АО «Эволента»</h3>
+                        <p><b>Практикант-тестировщик</b></p>
+
+                        <ul>
+                            <li>Проводил функциональное тестирование веб-приложений</li>
+                            <li>Осуществлял поиск и регистрацию дефектов</li>
+                            <li>Проверял корректность работы пользовательского интерфейса</li>
+                            <li>Работал с тестовой документацией</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <h3>ООО «АКАТАН»</h3>
+                        <p><b>Стажёр-тестировщик</b></p>
+
+                        <ul>
+                            <li>Проводил ручное тестирование сайтов</li>
+                            <li>Составлял тест-кейсы и чек-листы</li>
+                            <li>Выполнял регрессионное тестирование</li>
+                            <li>Участвовал в анализе найденных ошибок</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+                <h2>Образование</h2>
+
+                <p><b>Студент 3 курса</b></p>
+                <br>
+                <p>Специальность: Специалист по тестированию в области информационных технологий</p>
+            </div>
+
+            <div class="card">
+                <h2>Дополнительная информация</h2>
+
+                <ul>
+                    <li>Чтение технической документации на английском языке</li>
+                    <li>Прохождение курсов по программированию и тестированию</li>
+                    <li>Готовность к удалённой работе</li>
+                    <li>Интерес к развитию в сфере QA</li>
+                    <li>Изучение современных инструментов тестирования</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>О себе</h2>
+
+                <p class="about">
+                    Начинающий специалист по тестированию программного обеспечения.
+                    Имею опыт прохождения практики в АО «Эволента» и стажировки в
+                    ООО «АКАТАН». Интересуюсь разработкой программного обеспечения,
+                    тестированием веб-приложений и современными IT-технологиями.
+                    Постоянно совершенствую профессиональные навыки и стремлюсь
+                    развиваться в области обеспечения качества программных продуктов.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
